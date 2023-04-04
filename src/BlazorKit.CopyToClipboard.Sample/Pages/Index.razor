@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>BlazorKit.CopyToClipboard Sample</h1>
+
+<textarea class="form-control mb-4" rows="4" @bind=UserText @bind:event="oninput"></textarea>
+
+<ClipboardComponent TextToCopy=@UserText></ClipboardComponent>
+
+<ClipboardComponent TextToCopy=@UserText CopyToClipboardText="Copy" CopiedToClipboardText="Copied" DefaultClass="btn btn-secondary"></ClipboardComponent>
+
+@code {
+
+    private string UserText { get; set; }
+
+}
+
