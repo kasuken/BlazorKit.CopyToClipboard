@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  NETCORE_VERSION: '7.0.*'
+  NET_VERSION: '7.0.x'
   PROJECT_NAME: src/BlazorKit.CopyToClipboard 
   PROJECT_FILE: BlazorKit.CopyToClipboard.csproj  
   
