@@ -7,18 +7,18 @@ on:
   workflow_dispatch:
 
 env:
-  NET_VERSION: '7.0.x'
-  PROJECT_NAME: src/BlazorKit.CopyToClipboard 
-  PROJECT_FILE: BlazorKit.CopyToClipboard.csproj  
+  NET_VERSION: '7.x'
+  PROJECT_NAME: src/BlazorKit.CopyToClipboard
+  PROJECT_FILE: BlazorKit.CopyToClipboard.csproj
   
 jobs:
-  build:
+  publish:
     name: Publish on NuGet
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         fetch-depth: 0 # avoid shallow clone so nbgv can do its work.
         
@@ -38,4 +38,4 @@ jobs:
       run: dotnet pack -c Release -o . '${{ env.PROJECT_NAME }}/${{ env.PROJECT_FILE }}'
       
     - name: Publish on NuGet
-      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json  
