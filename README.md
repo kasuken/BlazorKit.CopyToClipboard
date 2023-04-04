@@ -27,6 +27,17 @@ With .NET CLI:
 dotnet add package BlazorKit.CopyToClipboard
 ```
 
+Add the following line to your Program.cs file
+
+```gitattributes
+builder.Services.AddScoped<IClipboardService, ClipboardService>();
+```
+
+Add the component to your page (take a look at the sample project)
+```gitattributes
+<CopyToClipboard Text="Hello World" />
+```
+
 ## Run Locally
 
 Clone the project
