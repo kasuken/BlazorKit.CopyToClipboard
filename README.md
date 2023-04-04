@@ -3,7 +3,7 @@
 
 ![](https://countrush-prod.azurewebsites.net/l/badge/?repository=kasuken.BlazorKitCopyToClipoard)
 
-A Blazor library for loading spinners.
+A Blazor library to add a Copy to Clipboard button to your application.
 
 It's a beta version.
 
