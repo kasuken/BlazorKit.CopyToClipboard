@@ -1,4 +1,4 @@
-name: Publish BlazorKit.Spinners on NuGet
+name: Publish BlazorKit.CopyToClipboard on NuGet
  
 on:
   push:
