@@ -5,9 +5,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<StaticWebAssetsEnabled>false</StaticWebAssetsEnabled>
-	</PropertyGroup>
 
-	<PropertyGroup>
 		<Authors>Emanuele Bartolesi</Authors>
 		<Company>www.emanuelebartolesi.com</Company>
 		<Description>A Copy To Clipboard button for Blazor.</Description>
@@ -15,11 +13,7 @@
 		<RepositoryUrl>https://github.com/kasuken/BlazorKit.CopyToClipboard</RepositoryUrl>
 		<RepositoryType></RepositoryType>
 		<PackageTags>Blazor, Razor Components</PackageTags>
-		<PackageReleaseNotes>
-			0.1.0 Alpha Release
-		</PackageReleaseNotes>
 		<PackageProjectUrl>https://github.com/kasuken/BlazorKit.CopyToClipboard</PackageProjectUrl>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Copyright>Emanuele Bartolesi</Copyright>
 		<PackageIcon>copy_icon.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
