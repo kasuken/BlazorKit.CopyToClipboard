@@ -1,10 +1,6 @@
 ﻿
 # BlazorKit.CopyToClipoard
 
-![](https://countrush-prod.azurewebsites.net/l/badge/?repository=kasuken.BlazorKitCopyToClipoard)
-
-A Blazor library for loading spinners.
-
 It's a beta version.
 
 ![demo](https://user-images.githubusercontent.com/2757486/229806262-d3b0ac5f-e6de-4e4f-8007-f22b97af1729.png)
